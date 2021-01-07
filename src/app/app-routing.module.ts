@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TodolistComponent } from './todolist/todolist.component';
+import { QuestlogComponent } from './questlog/questlog.component';
 
 const routes: Routes = [
-  { path: 'todolist', component: TodolistComponent },
-  { path: '', redirectTo: '/todolist', pathMatch: 'full'}
+  { path: 'questlog', component: QuestlogComponent },
+  { path: '', redirectTo: '/questlog', pathMatch: 'full'}
 ];
 
 @NgModule({
