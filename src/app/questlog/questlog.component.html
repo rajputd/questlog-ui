@@ -1,5 +1,5 @@
 <ul>
   <li *ngFor="let quest of quests">
-    {{quest.name}}
+    <app-quest [quest]=quest></app-quest>
   </li>
 </ul>

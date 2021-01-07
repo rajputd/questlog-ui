@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuestlogComponent } from './questlog/questlog.component';
+import { QuestComponent } from './questlog/quest/quest.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuestlogComponent
+    QuestlogComponent,
+    QuestComponent,
   ],
   imports: [
     BrowserModule,
