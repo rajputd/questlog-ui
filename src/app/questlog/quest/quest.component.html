@@ -1,4 +1,4 @@
 <div class="flex-parent">
-  <div>{{quest.name}}</div>
+  <div>{{ quest.name | truncate : 60}}</div>
   <input type="checkbox" [checked]="quest.complete" >
 </div>
