@@ -1,8 +1,13 @@
 .todo-item {
   border: solid 1px;
   margin: 1px;
-  padding: 3px;
+  padding: 10px;
   border-radius: 3px;
+}
+
+.todo-checkbox {
+  width: 1.1em;
+  height: 1.1em;
 }
 
 .flex-space-between {
