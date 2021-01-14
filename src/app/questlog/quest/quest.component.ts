@@ -7,8 +7,6 @@ import { Quest } from 'src/app/model/quest.model';
   styleUrls: ['./quest.component.scss']
 })
 export class QuestComponent implements OnInit {
-  @Input() quest!: Quest;
-
   constructor() { }
 
   ngOnInit(): void {
