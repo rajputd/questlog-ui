@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { QuestlogComponent } from './questlog/questlog.component';
 import { QuestComponent } from './questlog/quest/quest.component';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import { ListItemComponent } from './questlog/list-item/list-item.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     QuestlogComponent,
     QuestComponent,
     TruncatePipe,
+    ListItemComponent,
   ],
   imports: [
     BrowserModule,
