@@ -33,4 +33,8 @@ export class QuestService {
   getAllQuests(): Observable<Quest[]> {
     return of(this.QUESTS);
   }
+
+  getQuest(id: number): Observable<Quest> {
+    return of(this.QUESTS[id]);
+  }
 }

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Quest } from 'src/app/model/quest.model';
+import { QuestService } from 'src/app/services/quest.service';
 
 @Component({
   selector: 'app-quest',
@@ -7,9 +8,12 @@ import { Quest } from 'src/app/model/quest.model';
   styleUrls: ['./quest.component.scss']
 })
 export class QuestComponent implements OnInit {
-  constructor() { }
+  quest?: Quest;
+
+  constructor(private questService: QuestService) { }
 
   ngOnInit(): void {
+    this.questService.getQuest(0).subscribe(quest => this.quest = quest);
   }
 
 }
