@@ -5,7 +5,7 @@ import { QuestlogComponent } from './questlog/questlog.component';
 
 const routes: Routes = [
   { path: 'questlog', component: QuestlogComponent },
-  { path: 'quest', component: QuestComponent },
+  { path: 'quest/:id', component: QuestComponent },
   { path: '', redirectTo: '/questlog', pathMatch: 'full'}
 ];
 
