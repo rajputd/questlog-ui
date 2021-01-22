@@ -1,5 +1,5 @@
 <ul class="no-bullets">
   <li *ngFor="let quest of quests">
-    <app-list-item [quest]=quest></app-list-item>
+    <app-list-item [quest]=quest [routerLink]="['/quest/' + quest.id]"></app-list-item>
   </li>
 </ul>

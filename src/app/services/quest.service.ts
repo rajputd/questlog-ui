@@ -35,6 +35,10 @@ export class QuestService {
   }
 
   getQuest(id: number): Observable<Quest> {
-    return of(this.QUESTS[id]);
+    const found = this.QUESTS.find(quest => quest.id == id);
+    if (found === undefined) {
+      return of();
+    }
+    return of(found);
   }
 }

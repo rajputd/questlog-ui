@@ -20,8 +20,7 @@ export class QuestComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => this.questService.getQuest(+params['id']).subscribe(quest => this.quest = quest));
-    //this.questService.getQuest(0).subscribe(quest => this.quest = quest);
+    this.route.params.subscribe(params => this.questService.getQuest(params['id']).subscribe(quest => this.quest = quest));
   }
 
 }
