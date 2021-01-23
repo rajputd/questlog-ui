@@ -1,4 +1,7 @@
 <div class="flex-parent todo-item flex-space-between">
   <div>{{ quest.name | truncate : 60}}</div>
-  <input type="checkbox" class="todo-checkbox" [checked]="quest.complete" >
+  <div>
+    <a [routerLink]="['/quest/' + quest.id]">edit</a>
+    <input type="checkbox" class="todo-checkbox" [checked]="quest.complete" >
+  </div>
 </div>
