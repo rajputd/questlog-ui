@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Quest } from 'src/app/model/quest.model';
 
 @Component({
@@ -8,10 +8,15 @@ import { Quest } from 'src/app/model/quest.model';
 })
 export class ListItemComponent implements OnInit {
   @Input() quest!: Quest;
+  @Output() completionEvent = new EventEmitter<boolean>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onCompletionChange(val: boolean) {
+    this.completionEvent.emit(val);
   }
 
 }

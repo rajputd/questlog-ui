@@ -16,4 +16,8 @@ export class QuestlogComponent implements OnInit {
     this.questService.getAllQuests().subscribe(quests => this.quests = quests);
   }
 
+  updateCompletionStatus(id: number, newVal: boolean) {
+    this.questService.updateQuestionCompletion(id, newVal);
+  }
+
 }

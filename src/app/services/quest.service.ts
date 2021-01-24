@@ -41,4 +41,12 @@ export class QuestService {
     }
     return of(found);
   }
+
+  updateQuestionCompletion(id: number, newComplete: boolean) {
+    const found = this.QUESTS.find(quest => quest.id == id);
+    if (found === undefined) {
+      return;
+    }
+    return found.complete = newComplete;
+  }
 }

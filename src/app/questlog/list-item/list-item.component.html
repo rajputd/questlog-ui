@@ -2,6 +2,6 @@
   <div>{{ quest.name | truncate : 60}}</div>
   <div>
     <a [routerLink]="['/quest/' + quest.id]">edit</a>
-    <input type="checkbox" class="todo-checkbox" [checked]="quest.complete" >
+    <input type="checkbox" class="todo-checkbox" name="list-item" [(ngModel)]="quest.complete" (change)="onCompletionChange(quest.complete)">
   </div>
 </div>
