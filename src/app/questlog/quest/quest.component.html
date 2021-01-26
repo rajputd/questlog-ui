@@ -1,5 +1,5 @@
 <div>
-  <div>{{ quest.name }}</div>
-  <div>{{ quest.description }}</div>
-  <div>{{ quest.complete }}</div>
+  <input type="text" [(ngModel)]="quest.name">
+  <textarea [(ngModel)]="quest.description"></textarea>
+  <input type="checkbox" name="list-item" [(ngModel)]="quest.complete" >
 </div>
