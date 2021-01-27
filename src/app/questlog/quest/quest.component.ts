@@ -23,4 +23,7 @@ export class QuestComponent implements OnInit {
     this.route.params.subscribe(params => this.questService.getQuest(params['id']).subscribe(quest => this.quest = quest));
   }
 
+  saveChanges() {
+    this.questService.updateQuest(this.quest);
+  }
 }
