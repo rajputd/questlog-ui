@@ -1,0 +1,16 @@
+textarea {
+  width: 100%;
+  min-height: 50px;
+}
+
+.form-group {
+  margin: 5px;
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+.inline-form-group {
+  margin: 5px;
+}
