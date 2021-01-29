@@ -1,5 +1,7 @@
-<ul class="no-bullets">
-  <li *ngFor="let quest of quests">
-    <app-list-item [quest]=quest (completionEvent)="updateCompletionStatus(quest.id, $event)"></app-list-item>
-  </li>
-</ul>
+<app-layout-container>
+  <ul class="no-bullets">
+    <li *ngFor="let quest of quests">
+      <app-list-item [quest]=quest (completionEvent)="updateCompletionStatus(quest.id, $event)"></app-list-item>
+    </li>
+  </ul>
+</app-layout-container>

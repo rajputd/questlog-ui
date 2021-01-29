@@ -8,6 +8,7 @@ import { QuestComponent } from './questlog/quest/quest.component';
 import { TruncatePipe } from './pipes/truncate.pipe';
 import { ListItemComponent } from './questlog/list-item/list-item.component';
 import { FormsModule } from '@angular/forms';
+import { LayoutContainerComponent } from './layout-container/layout-container.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     QuestComponent,
     TruncatePipe,
     ListItemComponent,
+    LayoutContainerComponent,
   ],
   imports: [
     BrowserModule,
