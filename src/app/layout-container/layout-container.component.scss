@@ -6,20 +6,21 @@
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 20px;
   border-right: solid rgb(206, 200, 200) 2px;
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 8px 8px 8px 16px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
+  border-bottom: solid rgb(206, 200, 200) 2px;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
+  background-color: #c3bfbf;
 }
 
 .content {
