@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Quest } from '../model/quest.model';
+import { HttpClient } from '@angular/common/http';
+import { Api } from './api.const';
+
 
 @Injectable({
   providedIn: 'root'
@@ -28,10 +31,10 @@ export class QuestService {
     },
   ];
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getAllQuests(): Observable<Quest[]> {
-    return of(this.QUESTS);
+    return this.http.get<Quest[]>(Api.QUESTS);
   }
 
   getQuest(id: number): Observable<Quest> {

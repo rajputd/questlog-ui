@@ -9,6 +9,7 @@ import { TruncatePipe } from './pipes/truncate.pipe';
 import { ListItemComponent } from './questlog/list-item/list-item.component';
 import { FormsModule } from '@angular/forms';
 import { LayoutContainerComponent } from './layout-container/layout-container.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { LayoutContainerComponent } from './layout-container/layout-container.co
     LayoutContainerComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule
